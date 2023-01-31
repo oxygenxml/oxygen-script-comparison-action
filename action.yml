@@ -24,7 +24,7 @@ runs:
     - name: Checkout Comparison Template repo.
       uses: actions/checkout@v3.3.0
       with:
-        repository: FloriNNic/comparison-template
+        repository: oxygenxml/oxygen-script-comparison-template
         path: scripting
 
     - name: Checkout first branch.
