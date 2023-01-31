@@ -1,4 +1,4 @@
-name: Comparison Action
+name: Oxygen Comparison Action
 description: Compare your branches/PRs using Oxygen Scripting
 branding:
   icon: 'git-branch'
