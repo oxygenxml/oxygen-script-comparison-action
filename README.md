@@ -18,7 +18,7 @@ If you don't already have a workflow defined in your repository, you can use one
 name: Run Comparison Script
 on:
   pull_request_target:
-    branches: [ "master" ]
+    branches: [ "main" ]
     types: [opened]
   
 jobs:     
@@ -30,7 +30,7 @@ jobs:
         env:
           SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
         with:
-          firstBranch: master
+          firstBranch: main
           secondBranch: ${{ github.event.pull_request.head.sha }}
 ```
 💡 This workflow requires manual trigger from the 'Actions' tab:
@@ -48,7 +48,7 @@ on:
         default: 'main'
         required: true
 jobs:
-  validate:
+  compare:
     runs-on: ubuntu-latest
     steps:
       - name: Oxygen Comparison Script
