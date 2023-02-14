@@ -59,8 +59,12 @@ jobs:
           firstBranch: ${{ inputs.firstBranch }}
           secondBranch: ${{ inputs.secondBranch }}
 ```
+
+👀 Check [Oxygen Scripting - Comparison template](https://github.com/oxygenxml/oxygen-script-comparison-template) for a ready-to-use template, containing two slightly modified branches that can be compared.
+
 # Deployment to GitHub Pages
 After a successful run of the Comparison Script, a "comparisonReport.html" file, which provides details about the changes that were made, is created on the <i>gh-pages</i> branch. 
 If you want this report to be published to GitHub Pages, all you have to do is go to Settings &rarr; Pages, and under <i>Build and deployment</i> section select the <i>gh-pages</i> branch instead of the <i>main</i> branch. 
+
 The deployment workflow should automatically start and the report should be available shortly at: https://{userid}.github.io/{reponame}/comparisonReport.html.
 
