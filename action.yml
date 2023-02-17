@@ -1,5 +1,5 @@
-name: Oxygen Comparison Action
-description: Compare your branches/PRs using Oxygen Scripting
+name: Oxygen XML/JSON - Compare branches
+description: Compare branches and pull requests on your repository using Oxygen Scripting
 branding:
   icon: 'git-branch'
   color: 'blue'
